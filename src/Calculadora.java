@@ -15,6 +15,8 @@ public class Calculadora {
 	    
     	/** The num 2. */
     	private int num2;
+        
+        private int num3;
 	    
 	    /**
     	 * Instantiates a new calculadora.
@@ -22,9 +24,10 @@ public class Calculadora {
     	 * @param a the a
     	 * @param b the b
     	 */
-    	public Calculadora(int a, int b){
+    	public Calculadora(int a, int b,int c){
 	        num1 = a;
 	        num2 = b;
+                num3=c;
 	    }
 	    
     	/**
@@ -33,10 +36,14 @@ public class Calculadora {
     	 * @return the int
     	 */
     	public int suma(){
-	        int resul = num1 + num2;
+	        int resul = num3 + num2;
 	        return resul;
 	    }
 	    
+        public int suma2(){
+	        int resul = num1 + num3;
+	        return resul;
+	    }
     	/**
     	 * Resta.
     	 *
@@ -51,7 +58,6 @@ public class Calculadora {
 	    	}
 	        return resul;
 	    }
-	    
     	/**
     	 * Multiplica.
     	 *
